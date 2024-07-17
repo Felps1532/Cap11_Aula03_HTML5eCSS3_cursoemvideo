@@ -1,0 +1,26 @@
+IMAGEM:
+
+- No parâmetro "type" da tag <source> indicamos o tipo de imagem que usamos. (Modulo 1, Capitulo 10)
+
+- No parâmetro "srcset" da tag <source> configuramos o nome da imagem que será carregada quando o tamanho indicado (no "media") for atingido.
+
+- No parâmetro "media" da tag <source> indicamos o tamanho máximo a ser considerado para carregar a imagem indicada no atributo "srcset".
+
+Existe uma ORDEM! Utilizando o "max-width" a ordem é de cima pra baixo, menores para os maiores. Por fim, a imagem original, a maior!
+
+---------
+
+ÁUDIO:
+
+Nem todos os navegadores são totalmente compatíveis com o formato MP3, você precisará baixar o áudio em outros formatos! (AAC, WAV, OGG, etc)
+
+Dentro da tag <audio> e dentro da <source> os formatos serão carregados de cima para baixo! Dependendo do navegador, terá difucldades em rodar o áudio.
+
+Dentro da tag <audio> existe o parâmetro "preload="auto"" vai considerar que o site carregou completamente apenas quanto terminar de carregar o ÁUDIO!
+Ou seja, se o arquivo for um podcast, vai demorar demais para carregar.
+
+"Autoplay" toca automaticamente.
+
+"Controls" aparecerá os controles de áudio.
+ 
+"Loop" é Looping.

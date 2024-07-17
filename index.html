@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente <ins><strong>aumente e diminua o tamanho do navegador</strong></ins>.</p>
+    <picture> <!-- TAG NOVA! -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-pequena.png" type="image/png">
+        <!-- foi digitado 750px para dar uma "folga" (a barra de rolagem horizontal estava aparecendo)-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-media.png" type="image/png"> <!-- se o navegador estiver disponibilizando menos do que 1000px de espaço na tela,  ele exibirá essa imagem do <source> -->
+        <img src="imagens/foto-grande.png" alt="imagem flexível">
+        <!-- tem que seguir ESSA ORDEM acima! -->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a colocar áudios no HTML!</p>
+    <audio src="media/musica-cortada.mp3" controls></audio>
+    <br>
+    <audio controls> <!-- O navegador tentará reproduzir os áudios de cima para baixo! -->
+        <source src="media/musica-cortada.mp3" type="audio/mpeg">
+        <source src="media/musica-cortada.wav" type="audio/wav">
+        <source src="media/musica-cortada.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir esse áudio! Por favor tente em outro. Ou baixe o áudio MP3 logo abaixo.</p>   
+    </audio>
+    <p><a href="media/musica-cortada.mp3" download="musica-cortada.mp3" type="audio/mp3">Clique aqui para fazer o download do arquivo em MP3.</a></p>
+</body>
+</html>
